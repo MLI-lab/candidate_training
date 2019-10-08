@@ -9,7 +9,7 @@ The code for training models on candidate or CIFAR-10 training sets is given in 
 - *root*: Directory (`pathlib`) where the `.npz` files of the dataset reside.
 - *main_file*: Filename for the candidate dataset.
 - *sub_file* (optional): Filename for the CIFAR-10 dataset. Primary use is to track the accuracy on a clean subset of candidate dataset.
-- *model*: PyTorch model, from \{'resnet', 'densenet', 'vgg', 'shake', 'pyramidnet', 'resnext' \}.
+- *model*: PyTorch model, from \{'resnet', 'densenet', 'vgg', 'shake', 'pyramidnet', 'resnext'\}.
 - *outpath*: Output file for storing training logs.
 - *epochs*: \# epochs.
 - *print_freq*: Frequency for console log.
