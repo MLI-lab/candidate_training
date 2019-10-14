@@ -7,13 +7,13 @@ class BaseModel():
             'resnet':  resnet.ResNet18,
             # 'densenet': densenet.DenseNet,
             'densenet': densenetBC.Network,
-            'pyramidnet': pyramidnet.Network,
+            #'pyramidnet': pyramidnet.Network,
             'resnet_basic': resnet.ResNet101,
-            'resnext': resnext.Network,
-            'pnasnet': pnasnet.PNASNetB,
-            'vgg' : vgg.VGG,
-            'vgg_bearpaw' : vgg_bearpaw.vgg16_bn,
-            'shake' : shake_resnet.ShakeResNet,
+            #'resnext': resnext.Network,
+            #'pnasnet': pnasnet.PNASNetB,
+            #'vgg' : vgg.VGG,
+            #'vgg_bearpaw' : vgg_bearpaw.vgg16_bn,
+            #'shake' : shake_resnet.ShakeResNet,
         }
 
         if message_type not in MESSAGE_TYPE_TO_CLASS_MAP:
