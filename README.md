@@ -1,6 +1,6 @@
 # Learning from Candidate Examples
 
-This repository provides code for reproducing the figures in the  paper:
+This repository provides code for reproducing the figures in the paper:
 
 **"Leveraging inductive bias of neural networks for learning without explicit human annotations"**, by Fatih Furkan Yilmaz and Reinhard Heckel
 
@@ -18,6 +18,16 @@ The code for training models on candidate or CIFAR-10 training sets is given in 
 - *print_freq*: Frequency for console log.
 - *gpu*: GPU for Cuda. If not given, all available Cuda devices will be used.
 - *batch_size*: Training batch size. Default values are chosen with respect to maximum 12GiB memory.
+
+## Source codes
+Acknowledgements for PyTorch implementations of the models and examples are as follows:
+
+**Training code**
+- The code for training has been incorporated and modified from the _official_ PyTorch examples repository [https://github.com/pytorch/examples/...](https://github.com/pytorch/examples/tree/master/imagenet). The default hyperparameters has been used for fair experiments and comparison. 
+
+**Models**
+- *ResNet-18*: https://github.com/kuangliu/pytorch-cifar
+- *DenseNet-BC-100*: https://github.com/hysts/pytorch_image_classification
 
 ## Citation
 ```
