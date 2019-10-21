@@ -6,6 +6,9 @@ This repository provides code for reproducing the figures in the paper:
 
 # Downloading the dataset
 Use the following [dropbox link](https://www.dropbox.com/sh/eh07jhrwxjugqbb/AAClfTPne3uWlcnjc__FNkKpa?dl=0) to download the numpy files for both the candidate and CIFAR-10 datasets. Provide the directory of the files to the root argument in the `train_reproducible` notebook.
+- `candidate.npz` contains the candidate training set cleaned from the test set overlaps and similar images.
+- `cifar.npz` contains the original CIFAR-10 dataset.
+- `sims.npz` contains the similar images excluded from the training set.
 
 # Training on candidate dataset
 The code for training models on candidate or CIFAR-10 training sets is given in the `train_reproducible` notebook. The following variables can be adjusted for different experiments:
