@@ -1,3 +1,5 @@
+import numpy as np
+
 def readProgressLog(out_file, two_tests=True):
     
     prog_log = {keyword:list() for keyword in ['train', 'test']}

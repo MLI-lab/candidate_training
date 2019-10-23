@@ -28,4 +28,5 @@ Thumbs.db
 # project specific files
 **/*.npz
 draft.ipynb
-
+sim_data/ssim_dist/*.json
+compute_candidate_ssim.ipynb
