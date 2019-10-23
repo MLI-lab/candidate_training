@@ -22,6 +22,16 @@ The code for training models on candidate or CIFAR-10 training sets is given in 
 - *gpu*: GPU for Cuda. If not given, all available Cuda devices will be used.
 - *batch_size*: Training batch size. Default values are chosen with respect to maximum 12GiB memory.
 
+# Visualizing results
+The code for plotting the training results from the log files is given in the `visualize_train_logs` notebook.
+
+# Inspecting similar images
+The code for visually inspecting similar images is given in the `inspecting_similar_images` notebook.
+The test image with the index provided to *test_ind* variable is shown along with the top-100 closest images from the candidate set including the eliminated images. 
+
+Images that are eliminated from the candidate set upon manual inspection are marked as 'Excluded'.
+
+
 ## Source codes
 Acknowledgements for PyTorch implementations of the models and examples are as follows:
 
@@ -37,7 +47,7 @@ Acknowledgements for PyTorch implementations of the models and examples are as f
 @article{yilmaz_heckel_2019,
     author    = {Fatih Furkan Yilmaz and Reinhard Heckel},
     title     = {Leveraging inductive bias of neural networks for learning without explicit human annotations},
-    journal   = {arXiv:?},
+    journal   = {arXiv:1910.09055},
     year      = {2019}
 }
 ```
