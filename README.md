@@ -5,10 +5,10 @@ This repository provides code for reproducing the figures in the paper:
 **"Leveraging inductive bias of neural networks for learning without explicit human annotations"**, by Fatih Furkan Yilmaz and Reinhard Heckel
 
 # Downloading the dataset
-Use the following [dropbox link](https://www.dropbox.com/sh/eh07jhrwxjugqbb/AAClfTPne3uWlcnjc__FNkKpa?dl=0) to download the numpy files for both the candidate and CIFAR-10 datasets. Provide the directory of the files to the root argument in the `train_reproducible` notebook.
-- `candidate.npz` contains the candidate training set cleaned from the test set overlaps and similar images.
-- `cifar.npz` contains the original CIFAR-10 dataset.
-- `sims.npz` contains the similar images excluded from the training set.
+Use the following [dropbox link](https://www.dropbox.com/sh/eh07jhrwxjugqbb/AAClfTPne3uWlcnjc__FNkKpa?dl=0) to download numpy files containing test and train sets, specifically, our candidate train set, the CIFAR-10.1 test set, and the original CIFAR-10 test and training datasets. Provide the directory of the files to the root argument in the `train_reproducible` notebook.
+- `candidate.npz` Contains the candidate training set (which we constructed from the [TinyImages dataset](https://groups.csail.mit.edu/vision/TinyImages/) from Antonio Torralba, Rob Fergus, William T. Freeman as described in our paper), as well as the [CIFAR 10.1](https://github.com/modestyachts/CIFAR-10.1) test set from Ben Recht, Rebecca Roelofs, Ludwig Schmidt, and Vaishaal Shankar.
+- `cifar.npz` Contains the original [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset from Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
+- `sims.npz` Contains the similar images excluded from the training set.
 
 # Training on candidate dataset
 The code for training models on candidate or CIFAR-10 training sets is given in the `train_reproducible` notebook. The following variables can be adjusted for different experiments:
