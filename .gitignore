@@ -29,4 +29,8 @@ Thumbs.db
 **/*.npz
 draft.ipynb
 sim_data/ssim_dist/*.json
+sim_data/ssim_dist/excluded/*.json
 compute_candidate_ssim.ipynb
+inspect_similar_images-*.ipynb
+alternative_training/
+
